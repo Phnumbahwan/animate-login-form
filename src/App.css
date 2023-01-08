@@ -67,7 +67,7 @@
 
 /*SVG*/
 
-#Vase1, #Vase2, #Clock1, #Frame1, #Frame2, #Thing1, #SmallLeaves {
+#Vase1, #Vase2, #Clock1, #Frame1, #Frame2, #Thing1, #SmallLeaves, #BigLeaves {
   animation: move 4s linear infinite;
 }
 
