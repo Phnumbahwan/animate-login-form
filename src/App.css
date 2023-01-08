@@ -36,3 +36,85 @@
     transform: rotate(360deg);
   }
 }
+
+/*start*/
+
+.start-login-button {
+  color: #aee1ff;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 8px 50px;
+  width: 100px;
+  border: 1px solid #61DAFB;
+  border-radius: 4px;
+  transition: background-color 500ms, color 500ms;
+  transition-delay: 50ms;
+}
+
+.start-login-button:hover {
+  background-color: #59c0d9;
+  color: #fdfeff;
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f1f1f1;
+  margin: 0 5%;
+  border-radius: 9px;
+  padding: 150px 30px;
+}
+
+/*SVG*/
+
+#Vase1, #Vase2, #Clock1, #Frame1, #Frame2, #Thing1, #SmallLeaves {
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {transform: translateX(0%);}
+  25% {transform: translateX(-1%);}
+  50% {transform: translateX(0%);}
+  75% {transform: translateX(1%);}
+  100% {transform: translateX(0%);}
+}
+
+#Head {
+  animation: nod 4s linear infinite;
+}
+
+@keyframes nod {
+  0% {transform: translateX(0);}
+  10% {transform: translateX(-5px);}
+  20% {transform: translateX(5px);}
+  30% {transform: translateX(-5px);}
+  40% {transform: translateX(5px);}
+  50% {transform: translateX(-5px);}
+  60% {transform: translateX(5px);}
+  70% {transform: translateX(-5px);}
+  80% {transform: translateX(5px);}
+  90% {transform: translateX(-5px);}
+  100% {transform: translateX(0);}
+}
+
+#Foot {
+  animation: kick 4s linear infinite;
+}
+
+@keyframes kick {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(2deg);}
+  100% {transform: rotate(0deg);}
+}
+
+#Computer {
+  animation: bounce 4s linear infinite;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0%);}
+  25% {transform: translateY(-1%);}
+  50% {transform: translateY(0%);}
+  75% {transform: translateY(1%);}
+  100% {transform: translateY(0%);}
+}
